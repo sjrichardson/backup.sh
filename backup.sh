@@ -1,9 +1,9 @@
 #!/bin/bash
 OF=backup-$(date +%Y%m%d).tar.gz
 
-DIRECTORY=/Volumes/devnull/Backup
+DIRECTORY=/Volumes/devnull/Backup/
 if [ -d "$DIRECTORY" ]; then
-    tar -vczf $DIRECTORY$OF ~/Desktop ~/Documents ~/Music ~/Movies ~/Pictures ~/.vimrc ~/.bash_profile --exclude=~/Documents/Dtella/ 
+    tar -vczf $DIRECTORY$OF ~/Desktop ~/Documents ~/Music ~/Movies ~/Pictures ~/.vimrc ~/.bash_profile  
     clear
     echo backup complete!
 else echo Error: FileBackup is not connected!
